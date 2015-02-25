@@ -1,0 +1,6 @@
+HbA1c
+HgbA1c
+HBAIC
+A1c
+HgA1C
+HA1C

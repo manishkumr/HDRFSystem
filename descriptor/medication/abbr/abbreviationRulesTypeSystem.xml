@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>medication.abbr.abbreviationRulesTypeSystem</name>
+    <imports>
+        <import location="../../BasicTypeSystem.xml"/>
+        <import name="types.medicationAbbr"/>
+    </imports>
+    <types>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.bp</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.blood</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.pressure</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.separator</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.systolic</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.diastolic</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.valueSeparator</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.Bpvalue</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.hlEntity</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.modifier</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.LDL</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.LDLvalue</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.hl</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.ht</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.hc</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.diaTest</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.hg1ValuePre</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.hg1ValuePost</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.hg1Value</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.diaDate</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.bmiText</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.bmiValuePre</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.obeEntity</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.obemodifier</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.bp</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.blood</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.pressure</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.separator</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.systolic</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.diastolic</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.valueSeparator</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.Bpvalue</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.hlEntity</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.modifier</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.LDL</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.LDLvalue</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.hl</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.ht</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.hc</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.diaTest</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.hg1ValuePre</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.hg1ValuePost</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.hg1Value</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.diaDate</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.bmiText</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.bmiValuePre</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.obeEntity</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>medication.abbr.abbreviationRules.obemodifier</name>
+            <description>Type defined in medication.abbr.abbreviationRules</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+    </types>
+</typeSystemDescription>

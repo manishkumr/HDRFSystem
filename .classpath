@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="i2b2_res"/>
+	<classpathentry kind="src" path="lib"/>
+	<classpathentry kind="src" path="conf"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="src" path="script"/>
+	<classpathentry kind="src" path="descriptor/medication/abbr"/>
+	<classpathentry kind="src" path="descriptor/types"/>
+	<classpathentry kind="src" path="descriptor/utils"/>
+	<classpathentry excluding="abbr/" kind="src" path="descriptor/medication"/>
+	<classpathentry excluding="medication/abbr/|types/|utils/|medication/" kind="src" path="descriptor"/>
+	<classpathentry kind="src" path="models"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/MetaMap"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/WEKA"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Mallet"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/UIMA"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/UIMA_FIT"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Ruta"/>
+	<classpathentry kind="lib" path="lib/log4j-api-2.0.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/TCRN_TM/lib/log4j-1.2-api-2.0.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/log4j-core-2.0.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/Programs/apache-log4j-2.0.2-bin/apache-log4j-2.0.2-bin/log4j-core-2.0.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/hsqldb.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/opennlp"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/LVG"/>
+	<classpathentry kind="lib" path="D:/Programs/mallet-2.0.7/dist/mallet.jar" sourcepath="D:/Programs/mallet-2.0.7/src">
+		<attributes>
+			<attribute name="javadoc_location" value="http://mallet.cs.umass.edu/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

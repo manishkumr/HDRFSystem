@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="D:\Programs\apache-opennlp-1.5.3\lib\opennlp-tools-1.5.3.jar;lib/log4j-core-2.0.2.jar;lib/log4j-api-2.0.2.jar;D:\Programs\apache-opennlp-1.5.3\lib\opennlp-maxent-3.0.3.jar;D:\Programs\apache-opennlp-1.5.3\lib\jwnl-1.3.3.jar" destdir="doc" doctitle="TCRN_TM" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="tcrn.tbi.tm.annotator,tcrn.tbi.tm.exception,tcrn.tbi.tm.core,tcrn.tbi.tm.documents,tcrn.tbi.tm.model,tcrn.tbi.tm.runner" source="1.8" sourcepath="lib;conf;src;resources" splitindex="true" use="true" version="true">
+            <link href="http://docs.oracle.com/javase/8/docs/api/"/>
+            <link href="file:/D:/Dropbox%20-%20Manish/Dropbox/TCRN%20DTM%20Projects/dev/eclipseWorkspace/New_NLPworkspace/TCRN_TM/doc/"/>
+            <link href="file:/D:/Programs/apache-opennlp-1.5.3/docs/apidocs/opennlp-maxent/"/>
+            <link href="file:/D:/Programs/apache-opennlp-1.5.3/docs/apidocs/opennlp-tools/"/>
+        </javadoc>
+    </target>
+</project>

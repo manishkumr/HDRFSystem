@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project TCRN_TM">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="D:/TBI_Datasets/HDRFSystem1.0.0.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="tcrn.tbi.tm.runner.I2B2systemRunner"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="D:/Dropbox - Manish/Dropbox/TCRN DTM Projects/dev/eclipseWorkspace/New_NLPworkspace/TCRN_TM/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Administrator.TCRNTBIDEV1/Desktop/public_mm/src/javaapi/dist/MetaMapApi.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Administrator.TCRNTBIDEV1/Desktop/public_mm/src/javaapi/dist/prologbeans.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Program Files/Weka-3-7/weka.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/mallet-2.0.7/lib/bsh.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/mallet-2.0.7/lib/grmm-deps.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/mallet-2.0.7/lib/jdom-1.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/mallet-2.0.7/lib/jgrapht-0.6.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/mallet-2.0.7/lib/junit-4.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/mallet-2.0.7/lib/jwnl-1.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/mallet-2.0.7/lib/mallet-deps.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/mallet-2.0.7/lib/mtj-0.9.9.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/mallet-2.0.7/lib/openjgraph.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/mallet-2.0.7/lib/trove-2.0.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Administrator.TCRNTBIDEV1/Desktop/uimaj-2.6.0-bin/apache-uima/lib/jVinci.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Administrator.TCRNTBIDEV1/Desktop/uimaj-2.6.0-bin/apache-uima/lib/uima-adapter-soap.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Administrator.TCRNTBIDEV1/Desktop/uimaj-2.6.0-bin/apache-uima/lib/uima-adapter-vinci.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Administrator.TCRNTBIDEV1/Desktop/uimaj-2.6.0-bin/apache-uima/lib/uima-core.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Administrator.TCRNTBIDEV1/Desktop/uimaj-2.6.0-bin/apache-uima/lib/uima-cpe.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Administrator.TCRNTBIDEV1/Desktop/uimaj-2.6.0-bin/apache-uima/lib/uima-document-annotation.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Administrator.TCRNTBIDEV1/Desktop/uimaj-2.6.0-bin/apache-uima/lib/uima-examples.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Administrator.TCRNTBIDEV1/Desktop/uimaj-2.6.0-bin/apache-uima/lib/uimaj-bootstrap.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Administrator.TCRNTBIDEV1/Desktop/uimaj-2.6.0-bin/apache-uima/lib/uima-tools.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/uimafit-2.1.0/lib/commons-io-2.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/uimafit-2.1.0/lib/commons-lang-2.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/uimafit-2.1.0/lib/commons-logging-1.1.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/uimafit-2.1.0/lib/commons-logging-api-1.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/uimafit-2.1.0/lib/spring-asm-3.1.2.RELEASE.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/uimafit-2.1.0/lib/spring-beans-3.1.2.RELEASE.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/uimafit-2.1.0/lib/spring-context-3.1.2.RELEASE.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/uimafit-2.1.0/lib/spring-core-3.1.2.RELEASE.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/uimafit-2.1.0/lib/spring-expression-3.1.2.RELEASE.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/uimafit-2.1.0/lib/uimafit-core-2.1.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/uimafit-2.1.0/lib/uimaj-core-2.6.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/ruta-2.2.0/antlr-3.1.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/ruta-2.2.0/antlr-runtime-3.1.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/ruta-2.2.0/ruta-core-2.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox - Manish/Dropbox/TCRN DTM Projects/dev/eclipseWorkspace/New_NLPworkspace/TCRN_TM/lib/log4j-api-2.0.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox - Manish/Dropbox/TCRN DTM Projects/dev/eclipseWorkspace/New_NLPworkspace/TCRN_TM/lib/log4j-core-2.0.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox - Manish/Dropbox/TCRN DTM Projects/dev/eclipseWorkspace/New_NLPworkspace/TCRN_TM/lib/hsqldb.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/apache-opennlp-1.5.3/lib/jwnl-1.3.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/apache-opennlp-1.5.3/lib/opennlp-maxent-3.0.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/apache-opennlp-1.5.3/lib/opennlp-tools-1.5.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Dropbox - Manish/Dropbox/TCRN DTM Projects/dev/eclipseWorkspace/New_NLPworkspace/TCRN_TM/lib/lvg2014api.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Programs/mallet-2.0.7/dist/mallet.jar"/>
+        </jar>
+    </target>
+</project>

@@ -1,0 +1,103 @@
+PACKAGE medication.abbr;
+
+
+TYPESYSTEM types.medicationAbbr;
+
+WORDLIST medAbbrList = 'MedAbbr.txt';
+WORDLIST cadAbbrList = 'CADabbr.txt';
+WORDLIST diaAbbrList = 'diabetesAbbr.txt';
+WORDLIST htAbbrList  = 'HypertensionAbbr.txt';
+WORDLIST medMisspelledList  = 'medMisspelled_add.txt';
+WORDLIST hgTestList  = 'hgTestList.txt';
+
+Document{-> MARKFAST(medication, medAbbrList,true)};
+Document{-> MARKFAST(medication, medMisspelledList,true)};
+Document{-> MARKFAST(cad, cadAbbrList,true)};
+Document{-> MARKFAST(hypertension, htAbbrList,true)};
+Document{-> MARKFAST(diabetes, diaAbbrList,true)};
+
+//labvalues BP
+
+DECLARE bp , blood, pressure;
+BOOLEAN flag = true;
+W{REGEXP("BP",flag) -> MARK(bp)};
+W{REGEXP("blood",flag) -> MARK(blood)};
+W{REGEXP("pressure",flag) -> MARK(pressure)};
+blood + pressure {-> MARK(bp, 1,2)};
+    //value separator
+DECLARE separator;
+SPECIAL{REGEXP("=") -> MARK(separator)};
+COLON{-> MARK(separator)};
+
+
+    //BP Value
+DECLARE systolic;
+NUM{REGEXP(".{2,3}") -> MARK(systolic)} ;
+DECLARE diastolic;
+NUM{REGEXP(".{2,3}") -> MARK(diastolic,1,2)} ;
+//valueSeparator
+DECLARE valueSeparator;
+SPECIAL{REGEXP("/") -> MARK(valueSeparator)};
+
+DECLARE Bpvalue;
+
+systolic+ valueSeparator+ diastolic {-> MARK(Bpvalue,  1, 2, 3)};
+
+    //may be BP annotation
+//bp+ Bpvalue {-> MARK(LabValues,  1, 2, 3,4)} ;
+bp+ separator + Bpvalue {-> MARK(LabValues,  1, 2, 3,4,5)};
+bp+ W*Bpvalue {-> MARK(LabValues,1,5)} ;
+
+//HL
+DECLARE hlEntity;
+DECLARE modifier,LDL,LDLvalue;
+W{REGEXP("(?i)cholestrol|cholesterol|chol|lipids|lipid") -> MARK(hlEntity)};
+W{REGEXP("(?i)high|increased|elevated") -> MARK(modifier)};
+modifier+ hlEntity  {-> MARK(hyperlipedimia,1,2)};
+modifier+ W*hlEntity  {-> MARK(hyperlipedimia,1,3)};
+
+W{REGEXP("LDL",flag) -> MARK(LDL)};
+NUM{REGEXP(".{3}") -> MARK(LDLvalue)};
+LDL + LDLvalue {-> MARK(hyperlipedimia,1,2)} ;
+LDL + W*LDLvalue {-> MARK(hyperlipedimia,1,3)} ;
+
+DECLARE hl,ht,hc;
+W{REGEXP("(?i)Hyperlipidemia")-> MARK(hl)};
+W{REGEXP("(?i)Hypertension")-> MARK(ht)};
+W{REGEXP("(?i)Hypercholesterolemia")-> MARK(hc)};
+
+NUM + PERIOD +hl    {-> MARK(hyperlipedimia)};
+NUM + PERIOD +ht    {-> MARK(hypertension)};
+NUM + PERIOD +hc    {-> MARK(hyperlipedimia)};
+
+//diabetes lab value
+DECLARE diaTest,hg1ValuePre,hg1ValuePost,hg1Value,diaDate;
+
+Document{-> MARKFAST(diaTest, hgTestList,true)};
+
+//may be hbA1c valuef
+NUM{REGEXP(".{1}")-> MARK(hg1ValuePre)} ;
+NUM+valueSeparator+NUM+valueSeparator+NUM {->MARK(diaDate,1,5)};
+hg1ValuePre +PERIOD + NUM {->MARK(hg1Value,1,3)};
+diaTest + hg1Value{-> MARK(hgValue,1,5)};
+diaTest + W*hg1Value{-> MARK(hgValue,1,6)};
+diaTest + W*diaDate+hg1Value{-> MARK(hgValue,1,7)};
+diaTest + COLON + hg1Value{-> MARK(hgValue,1,3)};
+diaTest + COMMA + W*hg1Value{-> MARK(hgValue,1,4)};
+diaTest + SPECIAL + hg1Value{-> MARK(hgValue,1,3)};
+diaTest + W+NUM{-> MARK(hgValue,1,5)};
+
+//Obesity
+DECLARE bmiText,bmiValuePre;
+W{REGEXP("(?i)BMI")-> MARK(bmiText)};
+NUM{REGEXP(".{2}")-> MARK(bmiValuePre)};
+bmiText+bmiValuePre+PERIOD+NUM{-> MARK(bmiValue,1,4)};
+bmiText+COLON+bmiValuePre+PERIOD+NUM{-> MARK(bmiValue,1,5)};
+bmiText+COMMA+bmiValuePre+PERIOD+NUM{-> MARK(bmiValue,1,5)};
+bmiText+SPECIAL+bmiValuePre+PERIOD+NUM{-> MARK(bmiValue,1,5)};
+
+DECLARE obeEntity;
+DECLARE obemodifier;
+W{REGEXP("(?i)obese|obesity|overweight|") -> MARK(obeEntity)};
+W{REGEXP("(?i)morbid|morbidly|morbidy|severe|severely") -> MARK(obemodifier)};
+obemodifier+ obeEntity  {-> MARK(obesity,1,2)};
