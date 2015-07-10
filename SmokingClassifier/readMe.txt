@@ -2,7 +2,7 @@ SmokingClassifier Version 1.0.0 can be run on windows,linux or OSX.
 
 Pre-requisites:
 1. Java jdk 1.8 or higher
-
+2. Input File/Files in i2b2 2015 format(gold/complete)
 Steps:
 1. Unzip SmokingClassifier1.0.0.7z to directory hereafter refered as SmokingClassifier_HOME
 2. Open file config.properties located under SmokingClassifier_HOME using a text editor of your choice.

@@ -2,6 +2,7 @@ Sectionizer Version 1.0.0 can be run on windows,linux or OSX.
 
 Pre-requisites:
 1. Java jdk 1.8 or higher
+2. Input File/Files in i2b2 2015 format(gold/complete)
 
 Steps:
 1. Unzip Sectionizer1.0.0.zip to directory hereafter refered as SECTIONIZER_HOME
